@@ -18,9 +18,10 @@ public class AplikasiPerhitunganHariHelper {
         return ym.lengthOfMonth();
     }
 
-    /**
-     * Menghitung selisih hari antara dua tanggal
-     */
+/**
+ * VARIASI TAMBAHAN:
+ * Fitur untuk menghitung selisih hari antara dua tanggal
+ */
     public static long hitungSelisihHari(Date tgl1, Date tgl2) {
         if (tgl1 == null || tgl2 == null) return 0;
         long days = Math.abs(ChronoUnit.DAYS.between(
